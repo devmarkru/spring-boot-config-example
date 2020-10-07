@@ -1,2 +1,2 @@
-# spring-boot-config-example
-Пример работы с конфигами в Spring Boot
+# Spring Boot config example
+Пример работы с конфигами в Spring Boot.
