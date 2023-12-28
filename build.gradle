@@ -1,12 +1,15 @@
 plugins {
-    id 'org.springframework.boot' version '2.3.4.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'org.springframework.boot' version '3.2.1'
+    id 'io.spring.dependency-management' version '1.1.4'
     id 'java'
 }
 
 group = 'ru.devmark'
-version = '1.0.0'
-sourceCompatibility = '11'
+version = '1.1.0'
+
+java {
+    sourceCompatibility = '21'
+}
 
 repositories {
     mavenCentral()
@@ -16,6 +19,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 }
 
-test {
+tasks.named('test') {
     useJUnitPlatform()
 }
